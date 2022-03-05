@@ -22,8 +22,11 @@ alias drm 'docker rm'
 alias dim 'docker images'
 
 alias dc 'docker-compose'
-alias dcu 'docker-compose up'
+alias dcu 'docker-compose up -d'
+alias dcub 'docker-compose up -d --build'
 alias dcd 'docker-compose down'
+alias dcp 'docker-compose ps'
+alias dcr 'docker-compose run'
 
 # Git
 alias s 'git switch (git branch --sort=-authordate | cut -b 3- | grep -v -- "->" | peco | sed -e "s%origin/%%")'
