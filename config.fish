@@ -26,7 +26,8 @@ alias dcu 'docker-compose up -d'
 alias dcub 'docker-compose up -d --build'
 alias dcd 'docker-compose down'
 alias dcp 'docker-compose ps'
-alias dcr 'docker-compose run'
+alias dcr 'docker-compose run --rm'
+alias dce 'docker-compose exec'
 
 # Git
 alias s 'git switch (git branch --sort=-authordate | cut -b 3- | grep -v -- "->" | peco | sed -e "s%origin/%%")'
@@ -34,6 +35,7 @@ alias fu "git commit --fixup=(git log --oneline | peco | cut -d ' ' -f 1)"
 alias show "git show (git log --oneline | peco | cut -d ' ' -f 1)"
 
 alias g 'git'
+alias gbv 'git branch -vv'
 alias ga 'git add'
 alias gau 'git add -u'
 alias gaa 'git add -A'
